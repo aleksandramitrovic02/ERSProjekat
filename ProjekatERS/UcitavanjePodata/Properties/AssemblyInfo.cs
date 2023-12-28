@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ProjekatERS")]
+[assembly: AssemblyTitle("UcitavanjePodata")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ProjekatERS")]
+[assembly: AssemblyProduct("UcitavanjePodata")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("756006ef-f73e-47fc-ab30-a447e8a7b1f0")]
+[assembly: Guid("65238e6d-2f9e-4d09-9157-8658def4b973")]
 
 // Version information for an assembly consists of the following four values:
 //

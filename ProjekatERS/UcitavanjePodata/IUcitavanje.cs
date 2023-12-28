@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjekatERS
+namespace UcitavanjePodata
 {
-    class Program
+    internal interface IUcitavanje
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
