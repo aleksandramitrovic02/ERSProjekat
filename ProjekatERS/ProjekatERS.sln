@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IspisPodataka", "IspisPodat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvidencijaPodrucja", "EvidencijaPodrucja\EvidencijaPodrucja.csproj", "{6DF12905-7631-4EC9-AE1E-E88CE8E9E878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5C696A55-73FC-410C-89B5-93CF8427FBD8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{6DF12905-7631-4EC9-AE1E-E88CE8E9E878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF12905-7631-4EC9-AE1E-E88CE8E9E878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF12905-7631-4EC9-AE1E-E88CE8E9E878}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C696A55-73FC-410C-89B5-93CF8427FBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C696A55-73FC-410C-89B5-93CF8427FBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C696A55-73FC-410C-89B5-93CF8427FBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C696A55-73FC-410C-89B5-93CF8427FBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
