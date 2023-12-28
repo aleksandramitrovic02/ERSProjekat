@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{750AC3D3-5FE1-4CF3-AFE6-810ECF9BC432}</ProjectGuid>
+    <ProjectGuid>{BD2288AF-3907-423D-B036-5F62E1C01ABC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common1</RootNamespace>
-    <AssemblyName>Common1</AssemblyName>
+    <RootNamespace>Comon</RootNamespace>
+    <AssemblyName>Comon</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
