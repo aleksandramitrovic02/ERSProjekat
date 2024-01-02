@@ -130,7 +130,89 @@ namespace BazaPodataka
 
         }
 
+        public void InsertGeorafskaOblast(GeografskaOblast GOblast)
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO GeografskaOblast(sifra,ime) VALUES(@sifra, @ime)";
 
+                command.Parameters.AddWithValue("@sifra", GOblast.Sifra);
+                command.Parameters.AddWithValue("@ime", GOblast.Ime);
+               
+
+                int result = command.ExecuteNonQuery();
+
+                if (result != 0)
+                {
+                    Console.WriteLine("Uspesno ubacen u bazu");
+                }
+                else
+                {
+                    Console.WriteLine("Nismo uspeli da upisemo u bazu");
+                }
+            }
+
+
+        }
+
+        public void UpdateGeografskaOblast(GeografskaOblast GOblast)
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                command.Connection = connection;
+                command.CommandText = "UPDATE audit SET sifra=@sifra,ime=@ime WHERE sifra = @sifra";
+                command.Parameters.AddWithValue("@sifra", GOblast.Sifra);
+                command.Parameters.AddWithValue("@ime", GOblast.Ime);
+                
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteGeografskaOblast(int sifra)
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                command.Connection = connection;
+                command.CommandText = "DELETE FROM GeografskaOblast WHERE sifra = @sifra";
+                command.Parameters.AddWithValue("@sifra", sifra);
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteAllGeografskaOblast()
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                command.Connection = connection;
+                command.CommandText = "DELETE FROM GeografskaOblast";
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public List<GeografskaOblast> GetGeografskaOblast()
+        {
+
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<GeografskaOblast> oblasti = new List<GeografskaOblast>();
+                command.Connection = connection;
+                command.CommandText = "SELECT all FROM GeografskaOblast";
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        GeografskaOblast GOblast = new GeografskaOblast(reader.GetString(0), reader.GetInt32(1));
+                        oblasti.Add(GOblast);
+                    }
+                    return oblasti;
+                }  
+
+            }
+           
+
+        }
 
     }
 }

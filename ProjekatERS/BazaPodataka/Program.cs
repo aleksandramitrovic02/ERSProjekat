@@ -13,7 +13,7 @@ namespace BazaPodataka
         {
            DataBaseImpl baza=DataBaseImpl.getBase();
 
-           // Audit a = new Audit(new DateTime(2022,10,10),"akjhsd","ashjdkk",10);
+            Audit a = new Audit(new DateTime(2022,10,10),"akjhsd","ashjdkk",10);
 
 
 
