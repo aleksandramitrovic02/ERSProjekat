@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.exe.config
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.pdb

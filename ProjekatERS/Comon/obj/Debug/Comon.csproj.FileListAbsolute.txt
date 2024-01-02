@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\bin\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\bin\Debug\Comon.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\obj\Debug\Comon.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\obj\Debug\Comon.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\obj\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ProjekatERS\Comon\obj\Debug\Comon.pdb
