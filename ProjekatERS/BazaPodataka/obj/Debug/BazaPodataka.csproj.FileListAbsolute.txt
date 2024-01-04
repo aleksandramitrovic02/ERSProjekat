@@ -18,3 +18,13 @@ C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPo
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.csproj.CopyComplete
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.exe
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\bin\Debug\BazaPodataka.exe.config
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\bin\Debug\BazaPodataka.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\bin\Debug\BazaPodataka.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\bin\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\bin\Debug\Comon.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.csproj.CopyComplete
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\BazaPodataka\obj\Debug\BazaPodataka.pdb

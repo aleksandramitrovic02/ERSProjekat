@@ -10,14 +10,15 @@ namespace BazaPodataka
 {
     public class Servis : IEvidencija
     {
+        public static DataBaseImpl Baza = DataBaseImpl.getBase();
         public void Audit(Audit a)
         {
-            throw new NotImplementedException();
+            Baza.InsertAudit(a);
         }
 
         public void PrognoziranaIPotrosena(Potrosnja p)
         {
-            throw new NotImplementedException();
+            Baza.InsertPotrosnja(p);
         }
     }
 }

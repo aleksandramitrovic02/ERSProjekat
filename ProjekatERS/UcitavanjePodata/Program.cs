@@ -13,6 +13,9 @@ namespace UcitavanjePodata
     {
         static void Main(string[] args)
         {
+            ChannelFactory<IEvidencija> channel = new ChannelFactory<IEvidencija>("ServiceName");
+
+            IEvidencija proxy = channel.CreateChannel();
 
             Console.ReadLine();
         }

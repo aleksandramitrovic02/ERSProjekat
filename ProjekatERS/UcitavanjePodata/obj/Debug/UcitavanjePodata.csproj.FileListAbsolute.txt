@@ -15,3 +15,13 @@ C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\Uc
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.CopyComplete
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.exe
 C:\Users\user\Desktop\NOVI\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.exe.config
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\UcitavanjePodata.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\bin\Debug\Comon.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.csproj.CopyComplete
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\UcitavanjePodata\obj\Debug\UcitavanjePodata.pdb
