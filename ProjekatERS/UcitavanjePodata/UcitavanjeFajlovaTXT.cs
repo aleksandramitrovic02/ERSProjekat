@@ -6,13 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace UcitavanjePodata
 {
-    public class UcitavanjePodatakaCSV : UcitavanjeFajlova
+    public class UcitavanjeFajlovaTXT : UcitavanjeFajlova
     {
-        public UcitavanjePodatakaCSV(IEvidencija proxy)
+        public UcitavanjeFajlovaTXT(IEvidencija proxy)
         {
             Proxy = proxy;
         }
@@ -21,10 +20,10 @@ namespace UcitavanjePodata
             string[] linije = File.ReadAllLines(putanja);
 
 
-            for (int i = 1; i < linije.Length; i++)
+            foreach (var linija in linije)
             {
 
-                string[] delovi = linije[i].Split(',');
+                string[] delovi = linija.Split(',');
 
                 if (delovi.Length != 3)
                 {
@@ -64,33 +63,46 @@ namespace UcitavanjePodata
 
         public override bool PrebacitiUValidanSadrzaj(string putanja, out int brojRedova)
         {
-            XDocument xmlDokument = XDocument.Load(putanja);
             brojRedova = 0;
             bool povratna = true;
+            string[] linije = File.ReadAllLines(putanja);
 
-            var sveOblasti = xmlDokument.Descendants("OBLAST").Select(o => o.Value).Distinct().ToList();
+            Dictionary<String, int> brojRedovaPoOblasti = new Dictionary<string, int>();
 
-            foreach (var oblast in sveOblasti)
+            foreach(var linija in linije)
             {
-
-                var redoviZaOblast = xmlDokument.Descendants("STAVKA").Where(s => s.Element("OBLAST").Value == oblast).ToList();
-                brojRedova += redoviZaOblast.Count();
-                if (redoviZaOblast.Count != 24 && redoviZaOblast.Count != 23 && redoviZaOblast.Count != 25)
+                string[] delovi = linija.Split(',');
+                if(delovi.Length != 3)
                 {
-
                     povratna = false;
                 }
+                string oblast = delovi[2];
 
-
+                if (brojRedovaPoOblasti.ContainsKey(oblast))
+                {
+                    brojRedovaPoOblasti[oblast]++;
+                }
+                else
+                {
+                    brojRedovaPoOblasti[oblast]--;
+                }
             }
 
+            foreach(var brojReda in brojRedovaPoOblasti.Values)
+            {
+                if(brojRedova != 23 && brojRedova != 24 && brojRedova != 25)
+                {
+                    povratna = false;
+                }
+                brojRedova += brojRedova;
+            }
+            
             return povratna;
         }
 
-
         public override void ProlazakKrozFajlove(string putanja)
         {
-            Console.WriteLine($"Obrada CSV fajla na putanji: {putanja}");
+            Console.WriteLine($"Obrada TXT fajla na putanji: {putanja}");
             string imeFajla = Path.GetFileNameWithoutExtension(putanja);
             string tipFajla;
             DateTime datum;
@@ -105,7 +117,7 @@ namespace UcitavanjePodata
 
             if (!PrebacitiUValidanSadrzaj(putanja, out brojRedova))
             {
-                Console.WriteLine($"Nevalidan sadržaj CSV fajla: {imeFajla}");
+                Console.WriteLine($"Nevalidan sadržaj TXT fajla: {imeFajla}");
                 ProveraNevalidnihFajlova(imeFajla, putanja, brojRedova);
                 return;
             }
@@ -114,4 +126,3 @@ namespace UcitavanjePodata
         }
     }
 }
-
