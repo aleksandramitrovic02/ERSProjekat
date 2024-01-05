@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BazaPodataka
 {
-    public class Servis : IEvidencija
+    public class Server : IEvidencija
     {
         public static DataBaseImpl Baza = DataBaseImpl.getBase();
         public void Audit(Audit a)
