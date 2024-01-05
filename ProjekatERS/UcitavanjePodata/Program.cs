@@ -17,11 +17,12 @@ namespace UcitavanjePodata
             ChannelFactory<IEvidencija> channel = new ChannelFactory<IEvidencija>("ServiceName");
 
             IEvidencija proxy = channel.CreateChannel();
-            
-
-            
 
 
+
+
+            MeniHandler m = new MeniHandler(proxy);
+            m.meni();
             
 
 
