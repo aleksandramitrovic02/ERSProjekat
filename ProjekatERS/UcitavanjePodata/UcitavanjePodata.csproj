@@ -51,6 +51,7 @@
     <Compile Include="UcitavanjeFajlovaTXT.cs" />
     <Compile Include="UcitavanjeImpl.cs" />
     <Compile Include="UcitavanjePodatakaCSV.cs" />
+    <Compile Include="UcitavanjePodatakaXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
