@@ -17,18 +17,18 @@ namespace Comon.Model
         public String GeografskaOblast { get; set; }
 
         [DataMember]
-        public DateTime Sat { get; set; }
+        public int Sat { get; set; }
 
         [DataMember]
-        public double PrognoziranaP { get; set; }
+        public float PrognoziranaP { get; set; }
 
         [DataMember]
-        public double OstvarenaP { get; set; }
+        public float OstvarenaP { get; set; }
 
         [DataMember]
-        public double Odstupanje { get; set; }
+        public float Odstupanje { get; set; }
 
-        public Potrosnja(DateTime datum, string geografskaOblast, DateTime sat, double prognoziranaP, double ostvarenaP, double odstupanje)
+        public Potrosnja(DateTime datum, string geografskaOblast, int sat, float prognoziranaP, float ostvarenaP, float odstupanje)
         {
             Datum = datum;
             GeografskaOblast = geografskaOblast;

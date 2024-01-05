@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\bin\Debug\EvidencijaPodrucja.exe.config
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\bin\Debug\EvidencijaPodrucja.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\bin\Debug\EvidencijaPodrucja.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.pdb

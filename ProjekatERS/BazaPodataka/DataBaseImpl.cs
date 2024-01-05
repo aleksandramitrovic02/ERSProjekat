@@ -33,7 +33,7 @@ namespace BazaPodataka
 
             try
             {
-                connectionString = "Server=localhost;Database=Projekat;Trusted_Connection=True;";
+                connectionString = "Server=localhost;Database=ERS;Trusted_Connection=True;";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
 
@@ -222,14 +222,15 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO Potrosnja(GeografskaOblast,Datum,Sat,PrognoziranaP, OstvarenaP, Odstupanje) VALUES(@GeografskaOblast, @Datum, @Sat, @PrognoziranaP, @OstvarenaP, @Odstupanje)";
+                command.CommandText = "INSERT INTO Potrosnja1(GeografskaOblast,Datum,Sat,PrognoziranaPotrosnja, OstvarenaPotrosnja, Odstupanja) VALUES(@GeografskaOblast, @Datum, @Sat, @PrognoziranaPotrosnja, @OstvarenaPotrosnja, @Odstupanja)";
 
+                Console.WriteLine($"{potrosnja.Datum}  ${potrosnja.Sat}");
                 command.Parameters.AddWithValue("@GeografskaOblast", potrosnja.GeografskaOblast);
                 command.Parameters.AddWithValue("@Datum", potrosnja.Datum);
                 command.Parameters.AddWithValue("@Sat", potrosnja.Sat);
-                command.Parameters.AddWithValue("@PrognoziranaP", potrosnja.PrognoziranaP);
-                command.Parameters.AddWithValue("@OstvarenaP", potrosnja.OstvarenaP);
-                command.Parameters.AddWithValue("@Odstupanje", potrosnja.Odstupanje);
+                command.Parameters.AddWithValue("@PrognoziranaPotrosnja", potrosnja.PrognoziranaP);
+                command.Parameters.AddWithValue("@OstvarenaPotrosnja", potrosnja.OstvarenaP);
+                command.Parameters.AddWithValue("@Odstupanja", potrosnja.Odstupanje);
 
 
 
@@ -254,7 +255,7 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "UPDATE potrosnja SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaP=@PrognoziranaP, OstvarenaP=@OstvarenaP, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "UPDATE potrosnja1 SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaP=@PrognoziranaP, OstvarenaP=@OstvarenaP, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
                 command.Parameters.AddWithValue("@GeografskaOblast", potrosnja.GeografskaOblast);
                 command.Parameters.AddWithValue("@Datum", potrosnja.Datum);
                 command.Parameters.AddWithValue("@Sat", potrosnja.Sat);
@@ -272,7 +273,7 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM Potrosnja WHERE GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "DELETE FROM Potrosnja1 WHERE GeografskaOblast = @GeografskaOblast";
                 command.Parameters.AddWithValue("@GeografskaOblast", GeografskaOblast);
                 command.ExecuteNonQuery();
             }
@@ -283,7 +284,7 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM Potrosnja";
+                command.CommandText = "DELETE FROM Potrosnja1";
                 command.ExecuteNonQuery();
             }
         }
@@ -294,12 +295,12 @@ namespace BazaPodataka
             {
                 List<Potrosnja> potrosnje = new List<Potrosnja>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM Potrosnja";
+                command.CommandText = "SELECT all FROM Potrosnja1";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Potrosnja potrosnja = new Potrosnja(reader.GetDateTime(0), reader.GetString(1), reader.GetDateTime(2), reader.GetDouble(3), reader.GetDouble(4), reader.GetDouble(5));
+                        Potrosnja potrosnja = new Potrosnja(reader.GetDateTime(0), reader.GetString(1), reader.GetInt32(2), reader.GetFloat(3), reader.GetFloat(4), reader.GetFloat(5));
                         potrosnje.Add(potrosnja);
                     }
                     return potrosnje;

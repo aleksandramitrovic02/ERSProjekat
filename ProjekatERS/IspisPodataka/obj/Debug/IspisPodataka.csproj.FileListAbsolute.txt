@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\bin\Debug\IspisPodataka.exe.config
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\bin\Debug\IspisPodataka.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\bin\Debug\IspisPodataka.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.exe
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.pdb
