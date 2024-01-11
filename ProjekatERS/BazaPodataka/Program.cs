@@ -55,12 +55,21 @@ namespace BazaPodataka
 
             host2.AddServiceEndpoint(typeof(IGeo),
              new NetTcpBinding(),
+<<<<<<< HEAD
            new Uri("net.tcp://localhost:4002/IGeo"));
 
             host2.Open();
             Console.WriteLine("Servis3 je uspesno pokrenut");
 
         
+=======
+           new Uri("net.tcp://localhost:4002/IEvidencijaOblasti"));
+
+            host2.Open();
+            Console.WriteLine("Servis3 je uspesno pokrenut");
+            Console.ReadKey();
+
+>>>>>>> 0ef284351df4a79a14c4edaa229fe0ef7a36aa5d
 
             Console.Read();
 

@@ -186,7 +186,11 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
+<<<<<<< HEAD
                 command.CommandText = "DELETE FROM GeoPodrucja";
+=======
+                command.CommandText = "DELETE FROM GeoPodrucje";
+>>>>>>> 0ef284351df4a79a14c4edaa229fe0ef7a36aa5d
                 command.ExecuteNonQuery();
             }
         }
@@ -198,12 +202,20 @@ namespace BazaPodataka
             {
                 List<GeografskaOblast> oblasti = new List<GeografskaOblast>();
                 command.Connection = connection;
+<<<<<<< HEAD
                 command.CommandText = "SELECT * FROM GeoPodrucja";
+=======
+                command.CommandText = "SELECT * FROM GeoPodrucje";
+>>>>>>> 0ef284351df4a79a14c4edaa229fe0ef7a36aa5d
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
+<<<<<<< HEAD
                         GeografskaOblast GOblast = new GeografskaOblast(reader.GetString(1), reader.GetString(2));
+=======
+                        GeografskaOblast GOblast = new GeografskaOblast(reader.GetString(1), reader.GetInt32(2));
+>>>>>>> 0ef284351df4a79a14c4edaa229fe0ef7a36aa5d
                         oblasti.Add(GOblast);
                     }
                     return oblasti;
@@ -255,12 +267,12 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "UPDATE potrosnja1 SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaP=@PrognoziranaP, OstvarenaP=@OstvarenaP, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
+                command.CommandText = "UPDATE potrosnja1 SET GeografskaOblast=@GeografskaOblast,Datum=@Datum, Sat=@Sat, PrognoziranaPotrosnja=@PrognoziranaPotrosnja, OstvarenaPotrosnja=@OstvarenaPotrosnja, Odstupanje=@Odstupanje WHERE GeografskaOblast = @GeografskaOblast";
                 command.Parameters.AddWithValue("@GeografskaOblast", potrosnja.GeografskaOblast);
                 command.Parameters.AddWithValue("@Datum", potrosnja.Datum);
                 command.Parameters.AddWithValue("@Sat", potrosnja.Sat);
-                command.Parameters.AddWithValue("@PrognoziranaP", potrosnja.PrognoziranaP);
-                command.Parameters.AddWithValue("@OstvarenaP", potrosnja.OstvarenaP);
+                command.Parameters.AddWithValue("@PrognoziranaPotrosnja", potrosnja.PrognoziranaP);
+                command.Parameters.AddWithValue("@OstvarenaPotrosnja", potrosnja.OstvarenaP);
                 command.Parameters.AddWithValue("@Odstupanje", potrosnja.Odstupanje);
 
 
@@ -376,6 +388,26 @@ namespace BazaPodataka
                         potrosnje.Add(p);
                     }
                     return potrosnje;
+                }
+
+            }
+        }
+
+        public List<GeografskaOblast> evidencijaGeoPodrucja(string Ime, int Sirina)
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<GeografskaOblast> oblasti = new List<GeografskaOblast>();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM GeografskaOblast";
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        GeografskaOblast Oblast = new GeografskaOblast(reader.GetString(0), reader.GetInt32(1));
+                        oblasti.Add(Oblast);
+                    }
+                    return oblasti;
                 }
 
             }

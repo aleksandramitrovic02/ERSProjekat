@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comon", "Comon\Comon.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPodataka", "BazaPodataka\BazaPodataka.csproj", "{8865A25B-1F10-4D8A-98EE-28A53D73A484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestiranjeBaze", "TestiranjeBaze\TestiranjeBaze.csproj", "{2BBD8FF3-C4DE-4890-86F4-E7821FBA7B3E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{8865A25B-1F10-4D8A-98EE-28A53D73A484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8865A25B-1F10-4D8A-98EE-28A53D73A484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8865A25B-1F10-4D8A-98EE-28A53D73A484}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BBD8FF3-C4DE-4890-86F4-E7821FBA7B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BBD8FF3-C4DE-4890-86F4-E7821FBA7B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BBD8FF3-C4DE-4890-86F4-E7821FBA7B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BBD8FF3-C4DE-4890-86F4-E7821FBA7B3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

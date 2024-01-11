@@ -16,5 +16,9 @@ namespace Comon
 
         [OperationContract]
         void ubaci(GeografskaOblast oblast);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ef284351df4a79a14c4edaa229fe0ef7a36aa5d
     }
 }
