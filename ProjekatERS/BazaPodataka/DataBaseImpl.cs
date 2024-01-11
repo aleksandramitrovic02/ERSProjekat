@@ -311,6 +311,43 @@ namespace BazaPodataka
 
         }
 
+        public List<Potrosnja> ProgGeoPodrucje(DateTime datum, string geoOblast)
+        {
+
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<Potrosnja> potrosnje = new List<Potrosnja>();
+                command.Connection = connection;
+                command.CommandText = "SELECT Sat, PrognoziranaP FROM Potrosnja where Datum = @datum and GeografskaOblast = @GeografskaOblast and OstvarenaP = 0";
+                command.Parameters.AddWithValue("@datum", datum);
+                command.Parameters.AddWithValue("@GeografskaOblast", geoOblast);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+
+                    while (reader.Read())
+                    {
+
+                        int Sat = reader.GetInt32(0);
+                        float PrognoziranaP = (float)reader.GetDouble(1);
+
+                        Potrosnja p = new Potrosnja();
+                        p.Sat = Sat;
+                        p.PrognoziranaP = PrognoziranaP;
+                        p.GeografskaOblast = geoOblast;
+                        p.Datum = datum;
+                        p.OstvarenaP = 0;
+                        p.Odstupanje = 0;
+                        potrosnje.Add(p);
+                    }
+                    return potrosnje;
+                }
+
+            }
+        }
+
+
+
     }
 }
 
