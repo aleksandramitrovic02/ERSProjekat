@@ -381,6 +381,26 @@ namespace BazaPodataka
             }
         }
 
+        public List<GeografskaOblast> evidencijaGeoPodrucja(string Ime, int Sirina)
+        {
+            using (SqlCommand command = new SqlCommand())
+            {
+                List<GeografskaOblast> oblasti = new List<GeografskaOblast>();
+                command.Connection = connection;
+                command.CommandText = "SELECT all FROM GeografskaOblast";
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        GeografskaOblast Oblast = new GeografskaOblast(reader.GetString(0), reader.GetInt32(1));
+                        oblasti.Add(Oblast);
+                    }
+                    return oblasti;
+                }
+
+            }
+        }
+
 
 
     }

@@ -44,6 +44,16 @@ namespace BazaPodataka
             Console.WriteLine("Servis2 je uspesno pokrenut");
             Console.ReadKey();
 
+            ServiceHost host2 = new ServiceHost(typeof(ServerEvidencijaOblasti));
+
+            host2.AddServiceEndpoint(typeof(IEvidencijaOblasti),
+             new NetTcpBinding(),
+           new Uri("net.tcp://localhost:4001/IEvidencijaOblasti"));
+
+            host2.Open();
+            Console.WriteLine("Servis3 je uspesno pokrenut");
+            Console.ReadKey();
+
 
             Console.Read();
 
