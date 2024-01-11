@@ -12,7 +12,8 @@ namespace IspisPodataka
     {
         static void Main(string[] args)
         {
-
+            ChannelFactory<IIspis> channel = new ChannelFactory<IIspis>("Servis");
+            IIspis proxy = channel.CreateChannel();
             
         }
     }
