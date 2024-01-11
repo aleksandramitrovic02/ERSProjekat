@@ -11,6 +11,7 @@ namespace Comon
     [ServiceContract]
     public interface IIspis
     {
+        [OperationContract]
         List<List<Potrosnja>> Izracunaj(DateTime datum, string GeoPodrucje);
     }
 }

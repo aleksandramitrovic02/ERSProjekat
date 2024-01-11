@@ -5,3 +5,6 @@ C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.exe
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\bin\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\bin\Debug\Comon.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\EvidencijaPodrucja\obj\Debug\EvidencijaPodrucja.csproj.CopyComplete

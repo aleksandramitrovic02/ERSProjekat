@@ -12,9 +12,9 @@ namespace Comon.Model
     {
         public String Ime { get; set; }
 
-        public int Sifra { get; set; }
+        public string Sifra { get; set; }
 
-        public GeografskaOblast(string ime, int sifra)
+        public GeografskaOblast(string ime, string sifra)
         {
             Ime = ime;
             Sifra = sifra;

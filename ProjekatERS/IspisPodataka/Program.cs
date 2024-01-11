@@ -15,11 +15,12 @@ namespace IspisPodataka
         {
             ChannelFactory<IIspis> channel = new ChannelFactory<IIspis>("Servis");
             IIspis proxy = channel.CreateChannel();
+            meni(proxy);
             
 
         }
 
-        void meni(IIspis proxy)
+         static void meni(IIspis proxy)
         {
             while (true)
             {

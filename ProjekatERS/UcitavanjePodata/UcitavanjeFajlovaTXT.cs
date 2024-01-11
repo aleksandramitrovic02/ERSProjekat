@@ -39,7 +39,14 @@ namespace UcitavanjePodata
 
                     continue;
                 }
-
+                List<string> lista = Proxy.GeoPodr();
+                if (!lista.Contains(delovi[2]))
+                {
+                    GeografskaOblast geo = new GeografskaOblast();
+                    geo.Sifra = delovi[2];
+                    geo.Ime = delovi[2];
+                    Proxy.upisiOblast(geo);
+                }
                 string geografskaOblast = delovi[2];
 
                 float prognoziranaP = 0;

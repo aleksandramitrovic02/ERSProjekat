@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IEvidencija.cs" />
+    <Compile Include="IGeo.cs" />
     <Compile Include="IIspis.cs" />
     <Compile Include="Model\Audit.cs" />
     <Compile Include="Model\GeografskaOblast.cs" />
+    <Compile Include="Model\IEvidencijaObl.cs" />
     <Compile Include="Model\Potrosnja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,3 +5,6 @@ C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\D
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.exe
 C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\bin\Debug\Comon.dll
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\bin\Debug\Comon.pdb
+C:\Users\HP\Desktop\Novi\ERSProjekat\ERSProjekat\ProjekatERS\IspisPodataka\obj\Debug\IspisPodataka.csproj.CopyComplete

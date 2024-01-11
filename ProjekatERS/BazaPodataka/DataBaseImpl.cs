@@ -115,12 +115,12 @@ namespace BazaPodataka
             {
                 List<Audit> audits = new List<Audit>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM audit";
+                command.CommandText = "SELECT * FROM audit";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Audit audit = new Audit(reader.GetDateTime(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3));
+                        Audit audit = new Audit(reader.GetDateTime(1), reader.GetString(0), reader.GetString(2), reader.GetInt32(3));
                         audits.Add(audit);
                     }
                     return audits;
@@ -135,14 +135,14 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO GeografskaOblast(sifra,ime) VALUES(@sifra, @ime)";
+                command.CommandText = "INSERT INTO GeoPodrucja(sifra,ime) VALUES(@sifra, @ime)";
 
                 command.Parameters.AddWithValue("@sifra", GOblast.Sifra);
                 command.Parameters.AddWithValue("@ime", GOblast.Ime);
                
 
                 int result = command.ExecuteNonQuery();
-
+                
                 if (result != 0)
                 {
                     Console.WriteLine("Uspesno ubacen u bazu");
@@ -175,7 +175,7 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM GeografskaOblast WHERE sifra = @sifra";
+                command.CommandText = "DELETE FROM GeoPodrucje WHERE sifra = @sifra";
                 command.Parameters.AddWithValue("@sifra", sifra);
                 command.ExecuteNonQuery();
             }
@@ -186,7 +186,7 @@ namespace BazaPodataka
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "DELETE FROM GeografskaOblast";
+                command.CommandText = "DELETE FROM GeoPodrucja";
                 command.ExecuteNonQuery();
             }
         }
@@ -198,12 +198,12 @@ namespace BazaPodataka
             {
                 List<GeografskaOblast> oblasti = new List<GeografskaOblast>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM GeografskaOblast";
+                command.CommandText = "SELECT * FROM GeoPodrucja";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        GeografskaOblast GOblast = new GeografskaOblast(reader.GetString(0), reader.GetInt32(1));
+                        GeografskaOblast GOblast = new GeografskaOblast(reader.GetString(1), reader.GetString(2));
                         oblasti.Add(GOblast);
                     }
                     return oblasti;
@@ -295,7 +295,7 @@ namespace BazaPodataka
             {
                 List<Potrosnja> potrosnje = new List<Potrosnja>();
                 command.Connection = connection;
-                command.CommandText = "SELECT all FROM Potrosnja1";
+                command.CommandText = "SELECT * FROM Potrosnja1";
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -318,7 +318,7 @@ namespace BazaPodataka
             {
                 List<Potrosnja> potrosnje = new List<Potrosnja>();
                 command.Connection = connection;
-                command.CommandText = "SELECT Sat, PrognoziranaP FROM Potrosnja where Datum = @datum and GeografskaOblast = @GeografskaOblast and OstvarenaP = 0";
+                command.CommandText = "SELECT Sat, PrognoziranaPotrosnja FROM Potrosnja1 where Datum = @datum and GeografskaOblast = @GeografskaOblast and OstvarenaPotrosnja = 0";
                 command.Parameters.AddWithValue("@datum", datum);
                 command.Parameters.AddWithValue("@GeografskaOblast", geoOblast);
 
@@ -353,7 +353,7 @@ namespace BazaPodataka
             {
                 List<Potrosnja> potrosnje = new List<Potrosnja>();
                 command.Connection = connection;
-                command.CommandText = "SELECT Sat, OstvarenaP FROM Potrosnja where Datum = @datum and GeografskaOblast = @GeografskaOblast and PrognoziranaP = 0";
+                command.CommandText = "SELECT Sat, OstvarenaPotrosnja FROM Potrosnja1 where Datum = @datum and GeografskaOblast = @GeografskaOblast and PrognoziranaPotrosnja = 0";
                 command.Parameters.AddWithValue("@datum", datum);
                 command.Parameters.AddWithValue("@GeografskaOblast", geoOblast);
 

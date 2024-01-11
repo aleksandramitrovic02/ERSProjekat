@@ -19,6 +19,12 @@ namespace Comon
 
         void Audit(Audit a);
 
-        
+        [OperationContract]
+
+        List<string> GeoPodr();
+
+        [OperationContract]
+
+        void upisiOblast(GeografskaOblast geo);
     }
 }

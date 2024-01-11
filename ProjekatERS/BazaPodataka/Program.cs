@@ -2,10 +2,14 @@
 using Comon.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 
 namespace BazaPodataka
@@ -14,16 +18,20 @@ namespace BazaPodataka
     {
         static void Main(string[] args)
         {
-            //DataBaseImpl baza=DataBaseImpl.getBase();
+  //          < system.serviceModel >
 
-            //Audit a = new Audit(new DateTime(2022,10,10),"akjhsd","ashjdkk",10);
+  //      < services >
+  //  < service name = "BazaPodataka.Server" >
+  //    < endpoint address = "IEvidencija" binding = "netTcpBinding" contract = "Comon.IEvidencija" />
+  //    < host >
+  //      < baseAddresses >
+  //        < add baseAddress = "net.tcp://localhost:4000" />
+  //      </ baseAddresses >
+  //    </ host >
+  //  </ service >
+  //</ services >
 
-            /* using (ServiceHost host = new ServiceHost(typeof(Server)))
-             {
-                 host.Open();
-                 Console.WriteLine("Servis je uspesno pokrenut");
-                 Console.ReadKey();
-             }*/
+  //  </ system.serviceModel >
 
             ServiceHost host = new ServiceHost(typeof(Server));
 
@@ -36,14 +44,23 @@ namespace BazaPodataka
 
             ServiceHost host1 = new ServiceHost(typeof(ServisIspis));
 
-            host1.AddServiceEndpoint(typeof(IIspis),
+            host1.AddServiceEndpoint(typeof(Comon.IIspis),
              new NetTcpBinding(),
            new Uri("net.tcp://localhost:4001/IIspis"));
 
             host1.Open();
             Console.WriteLine("Servis2 je uspesno pokrenut");
-            Console.ReadKey();
 
+            ServiceHost host2 = new ServiceHost(typeof(ServisObl));
+
+            host2.AddServiceEndpoint(typeof(IGeo),
+             new NetTcpBinding(),
+           new Uri("net.tcp://localhost:4002/IGeo"));
+
+            host2.Open();
+            Console.WriteLine("Servis3 je uspesno pokrenut");
+
+        
 
             Console.Read();
 
