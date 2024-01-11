@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 namespace Comon
 {
     [ServiceContract]
-    public interface IEvidencijaOblasti
+    public interface IGeo
     {
         [OperationContract]
-        List<GeografskaOblast> evidencija(string Ime, int Sifra);
+        List<GeografskaOblast> evidencija();
+
+        [OperationContract]
+        void ubaci(GeografskaOblast oblast);
+
     }
 }

@@ -12,9 +12,13 @@ namespace EvidencijaPodrucja
     {
         static void Main(string[] args)
         {
-            ChannelFactory<IEvidencijaOblasti> channel = new ChannelFactory<IEvidencijaOblasti>("Server");
-            IEvidencijaOblasti proxy = channel.CreateChannel();
+            ChannelFactory<IGeo> channel = new ChannelFactory<IGeo>("Server");
+            IGeo proxy = channel.CreateChannel();
 
+            /*Meni meni = new Meni(proxy);
+            meni.meni();*/
+
+            Console.ReadLine();
             
         }
     }

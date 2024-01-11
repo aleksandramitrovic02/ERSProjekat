@@ -8,12 +8,17 @@ using System.Threading.Tasks;
 
 namespace BazaPodataka
 {
-    public class ServerEvidencijaOblasti : IEvidencijaOblasti
+    public class ServisObl : IGeo
     {
         DataBaseImpl baza = DataBaseImpl.getBase();
-        public List<GeografskaOblast> evidencija(string Ime, int Sifra)
+        public List<GeografskaOblast> evidencija()
         {
             return baza.GetGeografskaOblast();
+        }
+
+        public void ubaci(GeografskaOblast oblast)
+        {
+            baza.InsertGeorafskaOblast(oblast);
         }
     }
 }
